@@ -1,0 +1,88 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: #6db3f2;
+    background: -moz-linear-gradient(top, #6db3f2 0%, #ededed 45%, #2f841e 51%, #179615 100%);
+    background: -webkit-linear-gradient(top, #6db3f2 0%, #ededed 45%, #2f841e 51%, #179615 100%);
+    background: linear-gradient(to bottom, #6db3f2 0%, #ededed 45%, #2f841e 51%, #179615 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#179615', GradientType=0);
+}
+
+.mundialista {
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Shrikhand', Tahoma;
+}
+
+.arco {
+    position: fixed;
+    top: 50px;
+    bottom: 250px;
+    left: 300px;
+    right: 300px;
+    border-top: 15px solid #ccc;
+    border-left: 15px solid #ccc;
+    border-right: 15px solid #ccc;
+    background-color: rgba(200, 200, 200, 0.2);
+}
+
+.jugador {
+    position: fixed;
+    bottom: 50px;
+    left: 44%;
+    width: 100%;
+    height: 30px;
+}
+
+.balon {
+    position: fixed;
+    bottom: 100px;
+    left: 45%;
+    animation: disparoX 2s 1 ease-out;
+}
+
+.balon::after {
+    content: '';
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+    display: block;
+    background: url('../img/balon.png');
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    animation: disparoY 2s 1 ease-in;
+}
+
+@keyframes disparoX {
+    100% {
+        animation-timing-function:  cubic-bezier(0.3, 0.27, 0.07, 1.64);
+        transform: translateY(-400px) scaleY(0.5) scaleX(0.5);
+    }
+}
+
+@keyframes disparoY {
+    25% {
+        animation-timing-function:  cubic-bezier(0.3, 0.27, 0.07, 1.64);
+        transform: translateX(200px);
+    }
+    50% {
+        animation-timing-function:  cubic-bezier(0.3, 0.27, 0.07, 1.64);
+        transform: translateX(-200px);
+    }
+    75% {
+        animation-timing-function:  cubic-bezier(0.3, 0.27, 0.07, 1.64);
+        transform: translateX(200px);
+    }
+    100% {
+        animation-timing-function:  cubic-bezier(0.1, 0.27, 0.07, 1.64);
+        transform: translateX(0px);
+    }
+}
