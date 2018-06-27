@@ -1,0 +1,91 @@
+body {
+    font-family: 'Encode Sans Condensed';
+}
+
+.presentation {
+    text-align: center;
+    img {
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+    }
+    .nombre {
+        font-size: 3em;
+        font-weight: bold;
+    }
+    .direccion,.telefono {
+        font-size: 2em;
+        font-style: italic;
+    }
+    
+}
+
+.experiencias {
+    border: 1px solid #ccc;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    float: left;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    .title {
+        font-size: 20px;
+        font-weight: bold;
+        width: calc(100%-10px);
+        height: 30px;
+        background-color: #ccc;
+        padding: 10px;
+    }
+    .experiencia {
+        float: left;
+        width: 46.5%;
+        padding: 15px;
+        margin: 5px;
+        border-bottom: 2px solid #ccc;
+        .labores {
+            font-size: 18px;
+            margin-bottom: 10px;
+            border: 1px dotted #555;
+            padding: 8px;
+            height: 50px
+        }
+        ul>li {
+            text-decoration: underline;
+        }
+    }
+}
+
+.estudios {
+    border: 1px solid #ccc;
+    background-color: rgb(210, 220, 255);
+    border-radius: 5px;
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    .title {
+        font-size: 20px;
+        font-weight: bold;
+        width: calc(100%-10px);
+        height: 30px;
+        background-color: #ccc;
+        padding: 10px;
+    }
+    .estudio {
+        float: left;
+        width: 46.5%;
+        padding: 15px;
+        margin: 5px;
+        border-bottom: 2px solid #ccc;
+        .labores {
+            font-size: 18px;
+            margin-bottom: 10px;
+            border: 1px dotted #555;
+            padding: 8px;
+            height: 50px
+        }
+        ul>li {
+            text-decoration: underline;
+        }
+    }
+}

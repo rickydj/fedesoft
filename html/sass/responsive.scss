@@ -1,25 +1,25 @@
 $bordebase: #ccc;
 $fondobase:antiquewhite;
-
-@mixin cuadro{
+@mixin cuadro {
     border: 1px solid $bordebase;
     background-color: $fondobase;
 }
+
 #header {
     width: 100%;
     height: 80px;
     position: fixed;
     top: 0px;
-    z-index: 100; 
+    z-index: 100;
     @include cuadro;
 }
 
 #footer {
-    @include cuadro;
     position: fixed;
     bottom: 0px;
     width: 100%;
     height: 80px;
+    @include cuadro;
 }
 
 #body {
@@ -27,16 +27,15 @@ $fondobase:antiquewhite;
     background-color: #c0fa0c;
     position: absolute;
     top: 80px;
-    @media (min-width:900px) { 
+    @media (min-width: 900px) {
         width: 900px;
     }
     @media(min-width:400px) and (max-width: 900px) {
         width: 600px;
     }
-    @media(max-width:400px){
+    @media(max-width:400px) {
         width: 100%;
     }
-
 }
 
 .space {
@@ -44,15 +43,13 @@ $fondobase:antiquewhite;
     border: 1px solid $bordebase;
     background-color: aqua;
     float: left;
-    @media (min-width:900px) { 
+    @media (min-width: 900px) {
         width: 300px;
     }
     @media(min-width:400px) and (max-width: 900px) {
         width: 200px;
     }
-    @media(max-width:400px){
+    @media(max-width:400px) {
         width: 100%;
     }
 }
-
-
