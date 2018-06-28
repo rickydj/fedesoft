@@ -1,0 +1,23 @@
+body {
+    font-family: 'Montserrat';
+}
+
+.titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    width: 100%;
+}
+
+.partidos{
+    text-align: center;
+    width: 100%;
+}
+.partidos .partido {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 15px;
+}

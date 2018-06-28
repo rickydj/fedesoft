@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="worldcup">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="css/worldcup.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+    <script src="js/worldcup.js"></script>
+</head>
+
+<body ng-controller="Mundialista as mundial">
+    <div class="titulo">INFORMACION ACTUALIZADA MUNDIAL RUSIA 2018</div>
+    <div class="partidos">
+        <div ng-repeat="results in mundial.datos" class="partido">
+            <p>
+                <span>Ciudad :</span>
+                <b>{{results.venue}}</b>
+            </p>
+            <p>
+                <span>Estadio:</span> {{results.location}}</p>
+            <p>
+                <span>Publico :</span> {{results.attendance}}</p>
+            <p>
+                <span>Equipo local:</span> {{results.home_team_country}}</p>
+            <p>
+                <span>Equipo visitante:</span> {{results.away_team_country}}</p>
+            <p>
+                <span>Marcador:</span> {{results.home_team.code}}:{{results.home_team.goals}} - {{results.away_team.code}}:{{results.away_team.goals}}</p>
+        </div>
+    </div>
+</body>
+
+</html>
