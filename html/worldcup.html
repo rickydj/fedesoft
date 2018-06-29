@@ -22,8 +22,13 @@
             <p>
                 <span>Publico :</span> {{results.attendance}}</p>
             <p>
+                <img src="http://www.countryflags.io/{{results.home_team.code2Digits}}/flat/64.png">
+                <br />
                 <span>Equipo local:</span> {{results.home_team_country}}</p>
             <p>
+                <img src="http://www.countryflags.io/{{results.away_team.code2Digits}}/flat/64.png">
+                <br />
+                <img src="">
                 <span>Equipo visitante:</span> {{results.away_team_country}}</p>
             <p>
                 <span>Marcador:</span> {{results.home_team.code}}:{{results.home_team.goals}} - {{results.away_team.code}}:{{results.away_team.goals}}</p>
