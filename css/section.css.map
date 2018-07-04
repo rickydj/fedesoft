@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../html/sass/section.scss"
-    ],
-    "names": [],
-    "file": "section.css"
-}
