@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,IAAI;CACzB",
-    "sources": [
-        "../sass/sass_helper.scss"
-    ],
-    "names": [],
-    "file": "sass_helper.css"
-}
