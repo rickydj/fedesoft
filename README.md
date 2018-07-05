@@ -1,5 +1,7 @@
 # FEDESOFT
 
+![](https://www.unipymes.com/wp-content/uploads/2015/03/6.-fedesoft.png)
+
 ## Aplicaciones Hibridas - Curso Fedesoft
 
 Este repositorio tiene como objetivo contener los proyectos desarrollados para el curso Desarrollo Fullstack y Aplicaciones Hibridas dictado por Fedesoft
